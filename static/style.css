@@ -16,7 +16,7 @@
 }
 
 body {
-background-image: url('myPORTFOLIO/images/Concrete1.jpg');
+background-image: url('images/Concrete1.jpg');
 }
 
 nav li>a {
@@ -49,7 +49,7 @@ border: 1px solid gray;
 
 .parallax{
  	margin-top: 10rem;
-	background-image: url('myPORTFOLIO/images/Alexbn.jpg'); 
+	background-image: url('images/Alexbn.jpg'); 
 	min-height: 31rem;
 	 /* Create the parallax scrolling effect */
 	background-attachment: fixed;
