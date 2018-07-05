@@ -11,9 +11,7 @@
 
 
 
-* {
-	box-sizing: border-box;
-}
+
 
 body {
 background-image: url('../images/Concrete1.jpg');
@@ -48,6 +46,7 @@ border: 1px solid gray;
                                       /* Create the parallax scrolling effect */
 
 .parallax{
+	
  	margin-top: 10rem;
 	background-image: url('../images/Alexbn.jpg'); 
 	min-height: 31rem;
@@ -208,7 +207,10 @@ figure{
 	align-self: center;
 	
 } */
-
+#projects{
+	padding: 70px;
+	margin: 0 auto;
+}
 
 .img-project {
 	width: 17.5vw;
@@ -313,7 +315,7 @@ footer{
 }
 
 															/* Wobble Horizontal */
-@-webkit-keyframes hvr-wobble-horizontal {
+ @-webkit-keyframes hvr-wobble-horizontal {
 	16.65% {
 	  -webkit-transform: translateX(8px);
 	  transform: translateX(8px);
@@ -383,12 +385,14 @@ footer{
 	  animation-iteration-count: 1;
 	}
 
-
+ 
 	
+
+
 
   /*MEDIAQUERY*/
 
-  @media all and (max-width:1000px) {
+ /*  @media all and (max-width:1000px) {
     .flex-nav ul {
         flex-wrap: wrap;
     }
@@ -403,18 +407,19 @@ footer{
         flex-basis: 100%;
     }
 }
-
+ */
 
 
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media only screen and (max-device-width: 1024px) {
     .parallax {
-        background-attachment: scroll;
+				background-attachment: scroll;
+				margin: 0 auto;
     }
 }
 
 /*MEDIAQUERY FOR THE project GRID*/
-@media screen  and (max-width: 1000px) {
+/* @media screen  and (max-width: 1000px) {
     .grid_2{
         grid-template-columns: repeat(2, 1fr);
      }
@@ -432,6 +437,6 @@ footer{
 	  grid-template-columns: repeat(6, 1fr);
 	  grid-gap: 2px;
 	}
-  }
+  } */
   
     
