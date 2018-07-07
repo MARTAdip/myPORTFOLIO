@@ -51,7 +51,7 @@ border: 1px solid gray;
 .parallax{
 	
  	margin-top: 10rem;
-	background-image: url('../images/Alexbn.jpg'); 
+	background-image: url('../images/Alexbnresized.jpg'); 
 	min-height: 31rem;
 	 /* Create the parallax scrolling effect */
 	background-attachment: fixed;
