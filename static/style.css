@@ -26,6 +26,9 @@ width: 17rem;
 
 #logo{
 position: static;
+font-family: 'Special Elite', cursive;
+font-size: 1em;
+color: black !important;
 }
 .navbar {
 border-bottom: none;    
