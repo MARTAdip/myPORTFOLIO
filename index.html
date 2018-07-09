@@ -49,24 +49,21 @@ $(document).ready(function(){
 <body>
 <a name="top" id="top"></a>   <!--for smooth scroll-->
 
-	<br><br>
-	<!-- NAVIGATION -->
-	<nav class="navbar navbar-static-top pull-left ">
-		<ul class="nav navbar-nav  list-unstyled">
-			<li id="logo" class="text-muted">Marta Di Puccio</li>
-		</ul>
-	</nav>
-
-	<nav class="navbar justify-content-center p-2 mt-5 w-100">
-		<ul class="nav list-unstyled">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<a class="navbar-brand" href="#" id="logo">Marta Di Puccio</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		  <ul class="navbar-nav">
 			<li  class="w-100 text-center nav-item justify-content-center text-uppercase"><a  class="nav-link" href="#about"> About</a></li>
 			<li  class="w-100 text-center nav-item justify-content-center text-uppercase"><a  class="nav-link" href="#skills">Skills</a></li>
 			<li  class="w-100 text-center nav-item justify-content-center text-uppercase"><a  class="nav-link" href="#projects">Projects</a></li>
 			<li  class="w-100 text-center nav-item justify-content-center text-uppercase"><a  class="nav-link" href="#contact">Contact</a></li>
-		</ul>	
-	</nav>
-
-	<div class="parallax"></div>
+		  </ul>
+		</div>
+	  </nav>
+	<div class="parallax" style="background-image: url(../images/Alexbnresized.jpg);"></div>
 	<br>
 	<h2 class="text-center">Hi!</h2>
 	<p class="text-center"><strong>My name is Marta, i am a  Junior Web Developer based in Berlin.</strong></p>	
@@ -80,15 +77,17 @@ $(document).ready(function(){
 			</div>	
 		</div>	
 	</div>	
-		<button type="button" class="btn btn-2 btn-light card-group mx-auto"><a href="./CV_2018.pdf" target="_blank">FIND OUT MORE<br>DOWNLOAD MY CV<br><img src="https://png.icons8.com/source-code/win8/50/000000" style="width: 20px;height: 20px;"></a></button>
-	<div class="container-image pt-5">
-			<img src="images/viktoria.jpg" class="img-fluid image" alt="Responsive image" id="rise">
-			<div class="img-centered">
-				<article id="lifting">we rise by lifting others</article>
-			</div>
+	<!-- <a href="./CV_2018.pdf" target="_blank"></a> -->
+	
+		<button type="button" class="btn btn-2 btn-light card-group mx-auto"><a href="#">FIND OUT MORE<br><img src="https://png.icons8.com/source-code/win8/50/000000" style="width: 20px;height: 20px;"></button></a>
+
+
+	<div class="parallax text-center d-flex flex-column justify-content-center" style="background-image: url(../images/viktoria.jpg);">
+		<div class="py-5">
+			<h2 class="py-5">we rise by lifting others</h2>
+		</div>
 	</div>
-
-
+	
                                              <!--B GRID-->
 <hr  class="my-4">
 <h2 class="text-center"><div id="skills" class="text-uppercase pt-5">My Skills</div></h2>
@@ -119,23 +118,23 @@ $(document).ready(function(){
 <br>
 <div class="container" id="projects">
    <div class="width row">
-		<div class="col-md-4 col-sm-6 hvr-wobble-horizontal mb-5 "><a href="http://www.tini-music.com/" target="_blank"><img src="images/tINI.png" class="img-responsive img-project"></a><br><code>Landing Page i created for the artist tINI.</code></div>
+		<div class="col-md-4 col-sm-6 hvr-bounce-in mb-5 "><a href="http://www.tini-music.com/" target="_blank"><img src="images/rsz_tini2.jpg" class="img-responsive w-100 img-project"></a><br><p class="p-project">Landing Page i created for the artist tINI.</p></div>
 
-		<div class="col-md-4 col-sm-6 hvr-wobble-horizontal mb-5"><a href="https://martadip.github.io/country-list/" target="_blank"><img src="images/countries-final.png"  class="img-responsive img-project"></a><br><code>Country-List ApiCall to list all countries with metainfo (capital, language, currency, population, borders & world population). Filter, sort & reduce the table by different parameters. Search on the fly. ascendant and descendant sorting for the world population</code></div>
+		<div class="col-md-4 col-sm-6 hvr-bounce-in mb-5"><a href="https://martadip.github.io/country-list/" target="_blank"><img src="images/rsz_country-list.jpg"  class="img-responsive w-100 img-project"></a><br><p class="p-project">Country-List ApiCall to list all countries with metainfo (capital, language, currency, population, borders & world population). Filter, sort & reduce the table by different parameters. Search on the fly. ascendant and descendant sorting for the world population</p></div>
 
-		<div class="col-md-4 col-sm-6 hvr-wobble-horizontal"><a href="https://github.com/MARTAdip/superblog" target="_blank"><img src="images/Superblog.png" class="img-responsive img-project"></a><br><code>This is a little node server with CRUD interface. It's a full-stack project along with an API server. The project consists in a blog, where i can write my posts, update them and delete them. There is also a sorting order functionality that helps me to place my posts by ascending order.</code></div>
+		<div class="col-md-4 col-sm-6 hvr-bounce-in"><a href="https://github.com/MARTAdip/superblog" target="_blank"><img src="images/rsz_superblog.jpg" class="img-responsive w-100 img-project"></a><br><p class="p-project">This is a React node server app with CRUD interface. It's a full-stack project along with an API server. The project consists in a blog, where i can write my posts, update them and delete them. There is also a sorting order functionality that helps me to place my posts by ascending order.</p></div>
 
-		<div class="col-md-4 col-sm-6 hvr-wobble-horizontal mb-5"><a href="https://github.com/MARTAdip/Voice-Coder" target="_blank"><img src="images/fiona.png" class="img-responsive img-project"></a><br><code>React web app, made with Web Speech API. Adds speech synthesis (text to speech) to JavaScript. </code></div>
+		<div class="col-md-4 col-sm-6 hvr-bounce-in mb-5"><a href="https://github.com/MARTAdip/Voice-Coder" target="_blank"><img src="images/voice-coder.jpg" class="img-responsive w-100 img-project"></a><br><p class="p-project">React web app, made with Web Speech API. Adds speech synthesis (text to speech) to JavaScript. </p></div>
 
-		<div class="col-md-4 col-sm-6 hvr-wobble-horizontal"><a href="https://github.com/MARTAdip/Todo-s-App-/blob/master/README.md" target="_blank"><img src="images/todo.png" class="img-responsive img-project"></a><br><code>ToDo list made with Vanilla JS</code></div>
+		<div class="col-md-4 col-sm-6 hvr-bounce-in"><a href="https://github.com/MARTAdip/Todo-s-App-/blob/master/README.md" target="_blank"><img src="images/todo2.jpg" class="img-responsive w-100 img-project"></a><br><p class="p-project">ToDo list made with Vanilla JS</p></div>
 
-		<div class="col-md-4 col-sm-6 hvr-wobble-horizontal"><img src="images/inside.jpg" class="img-responsive img-project"></div>
+		<div class="col-md-4 col-sm-6 hvr-bounce-in"><img src="images/inside.jpg" class="img-responsive w-100 img-project"></div>
 
-		<div class="col-md-4 col-sm-6 hvr-wobble-horizontal"><img src="images/fabrik.jpg" class="img-responsive img-project"></div>
+		<div class="col-md-4 col-sm-6 hvr-bounce-in"><img src="images/fabrik.jpg" class="img-responsive w-100 img-project"></div>
 
-		<div class="col-md-4 col-sm-6 hvr-wobble-horizontal"><img src="images/nobk.jpg" class="img-responsive img-project"></div>
+		<div class="col-md-4 col-sm-6 hvr-bounce-in"><img src="images/analogmirror.jpg" class="img-responsive w-100 img-project"></div>
 
-		<div class="col-md-4 col-sm-6 hvr-wobble-horizontal"><img src="images/funkhausfassade.jpg" class="img-responsive img-project"></div>
+		<div class="col-md-4 col-sm-6 hvr-bounce-in"><img src="images/funkhausfassade.jpg" class="img-responsive w-100 img-project"></div>
 	</div>
 </div>
 

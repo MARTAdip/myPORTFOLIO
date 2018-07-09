@@ -1,10 +1,3 @@
-var items = document.getElementsByTagName("*");
-for (var i = items.length; i--;) {
- if(items[i].offsetWidth > document.getElementsByTagName("body")[0].offsetWidth) {
-     console.log(items[i], items[i].offsetWidth)
-  }
-}
-
 
 AOS.init({
     duration:2000
@@ -27,7 +20,7 @@ var Messenger = function(el){
         'Cool.'
       ];
       
-      setTimeout(m.animateIn, 100);
+      setTimeout(m.animateIn, 150);
     };
     
     m.generateRandomString = function(length){
