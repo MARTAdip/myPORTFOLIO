@@ -21,7 +21,6 @@ nav li>a {
 font-size:1.5em;
 font-family: 'Special Elite', cursive;
 color: black;
-width: 17rem; 
 }
 
 #logo{
@@ -217,10 +216,6 @@ figure{
 	height: 28vh; 
 }
 
-
-.my-4{             /*hr*/
-	width: 1140px;
-}
 
 /* HOVER */
 

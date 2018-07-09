@@ -1,3 +1,11 @@
+var items = document.getElementsByTagName("*");
+for (var i = items.length; i--;) {
+ if(items[i].offsetWidth > document.getElementsByTagName("body")[0].offsetWidth) {
+     console.log(items[i], items[i].offsetWidth)
+  }
+}
+
+
 AOS.init({
     duration:2000
 });
